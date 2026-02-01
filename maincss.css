@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: radial-gradient(circle at top, #f3f3f3, #dcdcdc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    width: 380px;
+    padding: 30px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.login-title {
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.role-selection {
+    display: flex;
+    background: #e5e7eb;
+    border-radius: 30px;
+    padding: 4px;
+    margin-bottom: 25px;
+}
+
+.role-btn {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 30px;
+    cursor: pointer;
+    background: transparent;
+    color: #374151;
+}
+
+.role-btn.active {
+    background: linear-gradient(135deg, #7c3aed, #5b21b6);
+    color: white;
+}
+
+.input-group {
+    margin-bottom: 16px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 12px;
+    border: 1px solid #cbd5e1;
+    font-size: 14px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    cursor: pointer;
+}
