@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Dashboard</title>
+
+    <!-- SAME CSS FILE -->
+    <link rel="stylesheet" href="maincss.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+
+    <h2>🎓 Student Dashboard</h2>
+
+    <!-- Navigation -->
+    <div class="dashboard-menu">
+        <button onclick="showSection('complaint')">Raise Complaint</button>
+        <button onclick="showSection('status')">Track Complaint</button>
+        <button onclick="showSection('feedback')">Feedback</button>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <!-- Raise Complaint -->
+    <div id="complaint" class="section">
+        <h3>Raise a Complaint</h3>
+
+        <form>
+            <label>Complaint Type</label>
+            <select>
+                <option>Plumbing</option>
+                <option>Electricity</option>
+                <option>Cleanliness</option>
+                <option>Internet</option>
+                <option>Room Issue</option>
+            </select>
+
+
+            <label>Description</label>
+            <textarea placeholder="Describe your issue"></textarea>
+
+            <button type="submit">Submit Complaint</button>
+        </form>
+    </div>
+
+    <!-- Complaint Status -->
+    <div id="status" class="section" style="display:none;">
+        <h3>Complaint Status</h3>
+        <p>Complaint ID: #102</p>
+        <p>Status: <b>In Progress</b></p>
+    </div>
+
+    <!-- Feedback -->
+    <div id="feedback" class="section" style="display:none;">
+        <h3>Feedback</h3>
+        <textarea placeholder="Give feedback after resolution"></textarea>
+        <button>Submit Feedback</button>
+    </div>
+
+</div>
+
+<!-- SAME JS FILE -->
+<script src="script.js"></script>
+</body>
+</html>

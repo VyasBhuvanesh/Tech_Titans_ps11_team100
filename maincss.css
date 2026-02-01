@@ -1,19 +1,24 @@
+/* =====================
+   GLOBAL RESET
+===================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Segoe UI", sans-serif;
+    font-family: "Segoe UI", Tahoma, sans-serif;
 }
 
 body {
-    height: 100vh;
-    background: radial-gradient(circle at top, #f3f3f3, #6d7dd5); /*#dcdcdc
-    /* background: rgb(198, 218, 64); */
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #f3f3f3, #dcdcdc);
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
+/* =====================
+   LOGIN PAGE STYLES
+===================== */
 .login-container {
     width: 380px;
     padding: 30px;
@@ -26,8 +31,9 @@ body {
 
 .login-title {
     font-size: 20px;
-    margin-bottom: 25px;
     font-weight: 600;
+    margin-bottom: 25px;
+    color: #1f2937;
 }
 
 .role-selection {
@@ -42,11 +48,10 @@ body {
     flex: 1;
     border: none;
     padding: 10px;
-    font-size: 14px;
     border-radius: 30px;
-    cursor: pointer;
     background: transparent;
-    color: #374151;
+    cursor: pointer;
+    font-size: 14px;
 }
 
 .role-btn.active {
@@ -69,11 +74,130 @@ body {
 .login-button {
     width: 100%;
     padding: 12px;
-    border: none;
     border-radius: 14px;
+    border: none;
     font-size: 16px;
     font-weight: 600;
     color: white;
-    background: linear-gradient(135deg, #3b82f6, #2563eb);
     cursor: pointer;
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+}
+
+/* =====================
+   DASHBOARD COMMON
+===================== */
+.dashboard-container {
+    width: 95%;
+    max-width: 1100px;
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1f2937;
+}
+
+/* =====================
+   DASHBOARD MENU
+===================== */
+.dashboard-menu {
+    display: flex;
+    justify-content: space-around;
+    background: #2563eb;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.dashboard-menu button {
+    background: white;
+    color: #2563eb;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* =====================
+   SECTIONS
+===================== */
+.section {
+    background: #f9fafb;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.section h3 {
+    margin-bottom: 10px;
+    color: #111827;
+}
+
+/* =====================
+   FORMS
+===================== */
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form select,
+form textarea,
+form button {
+    width: 100%;
+    margin-top: 6px;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+}
+
+form textarea {
+    resize: none;
+    height: 80px;
+}
+
+form button {
+    margin-top: 15px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* =====================
+   TABLE (WARDEN)
+===================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #d1d5db;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #e5e7eb;
+}
+
+/* =====================
+   LOGOUT BUTTON
+===================== */
+.logout-btn {
+    background: #dc2626;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    float: right;
 }

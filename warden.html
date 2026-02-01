@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Warden Dashboard</title>
+
+    <!-- SAME CSS FILE -->
+    <link rel="stylesheet" href="maincss.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+
+    <h2>🏢 Warden Dashboard</h2>
+
+    <!-- Navigation -->
+    <div class="dashboard-menu">
+        <button onclick="showSection('allComplaints')">All Complaints</button>
+        <button onclick="showSection('assign')">Assign Task</button>
+        <button onclick="showSection('analytics')">Analytics</button>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <!-- All Complaints -->
+    <div id="allComplaints" class="section">
+        <h3>All Complaints</h3>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Type</th>
+                <th>Priority</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>#102</td>
+                <td>Electricity</td>
+                <td>High</td>
+                <td>Pending</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Assign Task -->
+    <div id="assign" class="section" style="display:none;">
+        <h3>Assign Complaint</h3>
+        <select>
+            <option>#102 - Electricity</option>
+        </select>
+
+        <select>
+            <option>Maintenance Staff A</option>
+            <option>Maintenance Staff B</option>
+        </select>
+
+        <button>Assign</button>
+    </div>
+
+    <!-- Analytics -->
+    <div id="analytics" class="section" style="display:none;">
+        <h3>Analytics</h3>
+        <p>Total Complaints: 45</p>
+        <p>Pending: 12</p>
+        <p>Resolved: 33</p>
+    </div>
+
+</div>
+
+<!-- SAME JS FILE -->
+<script src="script.js"></script>
+</body>
+</html>
