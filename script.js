@@ -35,5 +35,5 @@ function showSection(sectionId) {
 }
 
 function logout() {
-    window.location.href = "index.html";
+    window.location.href = "frontend1.html";
 }
